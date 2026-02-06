@@ -215,3 +215,126 @@ h1, h2, h3 {
         text-align: center;
     }
 }
+/* === SECTION HEADINGS === */
+.section-subtitle {
+    color: var(--color-gold-green);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* Linia roșie de subliniere (Culoarea anului 2026) */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-red-accent);
+    margin-top: 10px;
+}
+
+/* === ABOUT SECTION === */
+.about-section {
+    padding: 100px 0;
+    background-color: var(--color-beige);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 20px 20px 0 var(--color-gold-green); /* Accent decorativ */
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background-color: var(--color-red-accent);
+    color: var(--color-white);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.experience-badge .years {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.experience-badge .text {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.qualifications-list {
+    margin-bottom: 40px;
+}
+
+.qualifications-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.qualifications-list i {
+    color: var(--color-gold-green);
+}
+
+.motto-box {
+    margin: 40px 0;
+    padding-left: 20px;
+    border-left: 3px solid var(--color-gold-green);
+}
+
+.handwriting-motto {
+    font-family: var(--font-handwriting);
+    font-size: 1.8rem;
+    color: var(--color-charcoal);
+}
+
+.btn-gold {
+    background-color: var(--color-gold-green);
+    color: var(--color-white);
+}
+
+.btn-gold:hover {
+    background-color: #7a8f65;
+}
+
+/* Responsive Despre */
+@media (max-width: 992px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-image {
+        max-width: 500px;
+        margin: 0 auto 50px;
+    }
+}
