@@ -1,16 +1,13 @@
 /* === VARIABILE DE CULOARE ȘI FONTURI === */
 :root {
     --color-white: #FFFFFF;
-    --color-beige: #F2E9E1;
-    --color-charcoal: #2C3E50;
-    --color-gold-green: #8FA87A;
-    --color-red-accent: #E31B23; /* Culoarea anului 2026 (roșu vibrant) */
+    --color-beige: #F9F7F2;      /* Un bej mult mai deschis, spre fildeș */
+    --color-charcoal: #1F2937;   /* Gri închis profesional */
+    --color-gold-green: #7D8461; /* Auriu-verzui stins, elegant */
+    --color-red-accent: #BC2026; /* Roșu 2026, nuanță regală/medicală */
     
     --font-main: 'Montserrat', sans-serif;
     --font-handwriting: 'Dancing Script', cursive;
-    
-    --container-width: 1200px;
-    --header-height: 80px;
 }
 
 /* === RESETARE DE BAZĂ === */
