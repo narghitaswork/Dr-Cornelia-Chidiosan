@@ -104,16 +104,27 @@ img {
     color: var(--color-white) !important;
 }
 
-/* === HERO: SUPRAPUNERE TEXT === */
+/* === HERO: PARALLAX ȘI SUPRAPUNERE === */
 .hero {
-    height: 75vh;
-    min-height: 550px;
+    height: 80vh;
+    min-height: 600px;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    /* ACEASTA ESTE LINIA PENTRU PARALLAX */
+    background-attachment: fixed; 
+    
     position: relative;
     display: flex;
     align-items: center;
     margin-top: var(--header-height);
+}
+
+/* Fallback pentru dispozitive mobile (Parallax-ul este problematic pe iOS/Android) */
+@media (max-width: 1024px) {
+    .hero {
+        background-attachment: scroll;
+    }
 }
 
 .hero-overlay {
@@ -122,15 +133,15 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    /* Gradient pentru lizibilitate text */
-    background: linear-gradient(90deg, rgba(31,41,55,0.85) 0%, rgba(31,41,55,0.3) 100%);
+    /* Gradientul care ajută textul să fie vizibil peste poză */
+    background: linear-gradient(90deg, rgba(31,41,55,0.8) 0%, rgba(31,41,55,0.2) 100%);
 }
 
 .hero-content {
     position: relative;
     z-index: 5;
     color: var(--color-white);
-    max-width: 650px;
+    max-width: 700px; /* Am mărit puțin lățimea pentru textul tău */
 }
 
 .accent-text {
